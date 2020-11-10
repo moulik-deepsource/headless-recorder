@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = ["**/__tests__/**"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["vue"]
+  environment = [
+    "nodejs",
+    "browser"
+  ]
+  style_guide = "standard"
